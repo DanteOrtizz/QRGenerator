@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/qr-code.png" type="image/x-icon">
+    <title>QR Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="qr-code"></div>
+        <div class="selection-container">
+            <span class="chose-color-txt">Chose color:</span>
+            <div class="color-container">
+                <input type="color" id="color-1">
+                <input type="color" id="color-2">
+            </div>
+        </div>
+        <div class="url-text-container">
+            <span>Enter URL:</span>
+            <input class="url-input-container" id="url-input" type="text" placeholder="https://">
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn" download="QRCode" id="download-btn">
+                <span>Download</span><i class="fas fa-regular fa-download"></i>
+            </a>
+            <button id="share-btn" class="share-btn btn">Share <i class="fas fa-regular fa-share"></i></button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b788805903.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
